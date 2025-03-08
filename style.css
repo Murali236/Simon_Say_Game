@@ -1,0 +1,41 @@
+h2,h1{
+    text-align: center;
+}
+
+.main{
+    display:flex;
+    justify-content: center;
+}
+
+.btn{
+    margin:2rem;
+    border : 10px solid black;
+    width:200px;
+    height:200px;
+    border-radius: 20%;
+    text-align: center;
+}
+
+.red{
+    background-color: #d95980;
+}
+
+.green{
+    background-color: #63aac0;
+}
+
+.orange{
+    background-color: #f99545;
+}
+
+.purple{
+    background-color: #819ff9;
+}
+
+.gameflash{
+    background-color: brown;
+}
+
+.userflash{
+    background-color: green;
+}

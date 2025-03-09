@@ -39,3 +39,19 @@ h2,h1{
 .userflash{
     background-color: green;
 }
+
+.start{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+button{
+    width:100px;
+    height:50px;
+    background-color:white;
+}
+
+button:hover{
+    background-color: aliceblue;
+}

@@ -3,6 +3,8 @@ let userSeq = [];
 
 let highest_Score = 0;
 
+let button = document.querySelector('button');
+
 let btns= ['red','green','orange','purple'];
 
 let started = 0;
@@ -13,6 +15,14 @@ let main = document.querySelector('.main');
 
 document.addEventListener('keypress',()=>{
         if(started == 0){
+        // console.log('game started');
+        levelUp();
+        started = 1;
+        }
+})
+
+button.addEventListener('click',()=>{
+    if(started == 0){
         // console.log('game started');
         levelUp();
         started = 1;
@@ -68,7 +78,7 @@ for(btn of allBtns){
 function matchSeq(idx){
     if(userSeq[idx]===gameSeq[idx]){
         if(userSeq.length == gameSeq.length){
-            setTimeout(levelUp(),2000);
+            setTimeout(levelUp,1000);
         }
     }
     else{
